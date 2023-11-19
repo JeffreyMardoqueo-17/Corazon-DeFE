@@ -1,70 +1,81 @@
-.Cabecera{
-    width:100%;
-    background-color: rgb(123, 0, 0);
-    padding:1em;
+.Cabecera {
+    width: 100%;
+    background-color: rgb(139, 0, 0);
+    padding: 1em;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    color:white;
+    color: white;
 }
-.Cabecera-h1{}
-.Cabecera-a{}
-.Cabecera-button{
-    display:none;
+
+.Cabecera-h1 {}
+
+.Cabecera-a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.Cabecera-button {
+    display: none;
     cursor: pointer;
 }
-.Cabecera-svg{
-    width:2em;
-    height:2em;
-    fill:white;
+
+.Cabecera-svg {
+    width: 2em;
+    height: 2em;
+    fill: white;
 }
-.Cabecera-nav{}
-.Cabecera-nav .Cabecera-ul{
+
+.Cabecera-nav {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
 }
-.Cabecera .Cabecera-nav .Cabecera-ul {
+
+.Cabecera-ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Alinear elementos en línea */
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 .Cabecera-li {
-    margin-right: 10px; /* Puedes ajustar el espacio entre elementos según tus necesidades */
+    margin: 0 0.5em;
 }
 
-.Cabecera-li{
-    margin: 0 .5em;
-}
-@media screen and (max-width:480px){
-
-    .Cabecera-button{
+@media screen and (max-width: 660px) {
+    .Cabecera-button {
         display: flex;
     }
-    .Cabecera-nav{
-        width:100%;
 
+    .Cabecera-nav {
+        width: 100%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        height:0vh;
+        height: 0;
         opacity: 0;
         overflow: hidden;
-        transition: all .5s ease;
+        transition: all 0.5s ease;
     }
-    .Cabecera-nav.isActive{
-        height:50vh;
+
+    .Cabecera-nav.isActive {
+        height: 30vh;
         opacity: 1;
     }
-    .Cabecera-ul{
+
+    .Cabecera-ul {
         flex-direction: column;
     }
-    .Cabecera-li{
-        margin: .5em 0;
+
+    .Cabecera-li {
+        margin: 0.5em 0;
     }
 }
+    
