@@ -1,6 +1,6 @@
 .Cabecera{
     width:100%;
-    background-color: rgb(63, 6, 6);
+    background-color: black;
     padding:1em;
 
     display: flex;
@@ -10,6 +10,8 @@
 
     color:white;
 }
+.Cabecera-h1{}
+.Cabecera-a{}
 .Cabecera-button{
     display:none;
     cursor: pointer;
@@ -20,7 +22,7 @@
     fill:white;
 }
 .Cabecera-nav{}
-.Cabecera-ul{
+.Cabecera-nav .Cabecera-ul{
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
