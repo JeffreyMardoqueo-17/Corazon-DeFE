@@ -1,13 +1,11 @@
 .Cabecera{
     width:100%;
-    background-color: black;
+    background-color: rgb(123, 0, 0);
     padding:1em;
-
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-
     color:white;
 }
 .Cabecera-h1{}
@@ -28,6 +26,17 @@
     justify-content: flex-end;
     align-items: center;
 }
+.Cabecera .Cabecera-nav .Cabecera-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Alinear elementos en línea */
+}
+
+.Cabecera-li {
+    margin-right: 10px; /* Puedes ajustar el espacio entre elementos según tus necesidades */
+}
+
 .Cabecera-li{
     margin: 0 .5em;
 }

@@ -52,8 +52,7 @@ const Cabecera = () => {
                 </svg>
             </button>
 
-
-
+            {/* mapeo de la lista de secciones de la web (menu) */}
             <nav className={`Cabecera-nav ${menu ? 'isActive' : ''}`}>
                 {list.map((item, index) => (
                     <ul className='Cabecera-ul'>
@@ -65,7 +64,6 @@ const Cabecera = () => {
                                 <span className="title">{item.text}</span>
                             </a>
                         </li>
-
                     </ul>
                 ))}
             </nav>
