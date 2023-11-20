@@ -10,3 +10,4 @@ function App() {
 }
 
 export default App;
+//este sera como nuestro index
