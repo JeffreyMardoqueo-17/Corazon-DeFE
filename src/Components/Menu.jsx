@@ -58,9 +58,6 @@ const Cabecera = () => {
                     {list.map((item, index) => (
                         <li key={index} className='Cabecera-li'>
                             <a href={item.link} className='Cabecera-a'>
-                                <span className="icon">
-                                    {item.icon}
-                                </span>
                                 <span className="title">{item.text}</span>
                             </a>
                         </li>

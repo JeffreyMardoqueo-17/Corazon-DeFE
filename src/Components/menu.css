@@ -92,11 +92,11 @@ a::before{
 a ::after, a ::before{
     content: '';
     width: 0%;
-    height: 2px;
+    height: 1px;
     background-color: blue;
     display: block;
     transition: 0.5s;
 }
-button:hover::after, a :hover::before{
+a:hover::after, a :hover::before{
     width: 100%;
 }
