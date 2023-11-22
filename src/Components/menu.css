@@ -1,6 +1,6 @@
 .Cabecera {
     width: 100%;
-    background-color: rgb(139, 0, 0);
+    background-color: rgb(65, 13, 13);
     padding: 1em;
     display: flex;
     flex-flow: row wrap;
@@ -78,4 +78,25 @@
         margin: 0.5em 0;
     }
 }
-    
+
+
+/**EFECTOS HOVER DE LOS LINKS DEL MENU=============*/
+a{
+    border: none;
+    background: none;
+    font-weight: 600;
+}
+a::before{
+    margin-left: auto;
+}
+a ::after, a ::before{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: blue;
+    display: block;
+    transition: 0.5s;
+}
+button:hover::after, a :hover::before{
+    width: 100%;
+}
