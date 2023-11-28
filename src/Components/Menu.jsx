@@ -53,7 +53,7 @@ const Cabecera = () => {
                 </svg>
             </button>
 
-            <nav className={`Cabecera-nav ${menu ? 'isActive' : ''}`}>
+            <nav className={`Cabecera-nav ${menu ? 'isActive' : ''}`}> 
                 <ul className='Cabecera-ul'>
                     {list.map((item, index) => (
                         <li key={index} className='Cabecera-li'>
