@@ -7,16 +7,16 @@ export const Carrusel = () => {
         <div className={sty.slider}>
             <ul>
                 <li>
-                    <img src='/IMG/bacgg.jpg' alt="Image 1" />
+                    <img src='/IMG/viandoalcielo.jpeg' alt="viando al cielo" />
                 </li>
                 <li>
-                    <img src="/IMG/KSJDSD.webp" alt="Image 2" />
+                    <img src="/IMG/paradoviendoalFrente.jpeg" alt="paradoviendoalFrente" />
                 </li>
                 <li>
-                    <img src="/IMG/KSJDSD.webp" alt="Image 3" />
+                    <img src="/IMG/rocaaa.jpeg" alt="rocaaa" />
                 </li>
                 <li>
-                    <img src="/IMG/fondos.jpg" alt="Image 4" />
+                    <img src="/IMG/pajarooo.jpeg" alt="pajarooo" />
                 </li>
             </ul>
         </div>
