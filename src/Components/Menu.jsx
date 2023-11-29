@@ -37,7 +37,7 @@ const Cabecera = () => {
     }
 
     return (
-             <header className="Cabecera">
+            <header className="Cabecera">
             <h1 className="Cabecera-h1">
                 <a href="#" className="Cabecera-a">
                     J.J
@@ -69,4 +69,3 @@ const Cabecera = () => {
 }
 
 export default Cabecera;
-
