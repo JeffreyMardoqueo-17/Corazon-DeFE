@@ -5,11 +5,11 @@ import { Carrusel } from './Components/Carrusel.jsx';
 function App() {
   return (
     <div className="App">
-      <Menu />
-      <Carrusel></Carrusel>
+      {/* <Menu /> */}
+      {/* <Carrusel></Carrusel> */}
     </div>
   );
 }
 
 export default App;
-//este sera como nuestro index
+//este sera como nuestro inde 

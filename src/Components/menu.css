@@ -77,7 +77,7 @@
         transition: all 0.5s ease;
     }
     .Cabecera-nav.isActive {
-        height: 30vh;
+        height: 40vh;
         opacity: 1;
     }
 

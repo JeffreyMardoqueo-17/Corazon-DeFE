@@ -67,5 +67,4 @@ const Cabecera = () => {
         </header>
     )
 }
-
 export default Cabecera;
