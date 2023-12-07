@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: red;
+}
+header{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/public/IMG/bacgg.jpg);
+    background-size: cover;
+}
+/*NAVBAAR*/
+.navbar{
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+/*TODOS LOS A QUE ESTEN DENTRO DEL NAVBAR*/
+.navbar a{
+    color: #fff;
+}
+.navbar .logo{
+    font-size: 2em;
+    font-weight: bold;
+}
+.navbar .nav-links ul {
+    display: flex;
+}
+.navbar .nav-links ul li{
+    margin: 0 25px;
+}
+.navbar .nav-links ul .active{
+    color: blue;
+    font-weight: 600;
+}
