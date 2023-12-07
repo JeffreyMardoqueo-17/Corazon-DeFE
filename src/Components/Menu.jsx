@@ -40,7 +40,7 @@ const Cabecera = () => {
             <header className="Cabecera">
             <h1 className="Cabecera-h1">
                 <a href="#" className="Cabecera-a">
-                    J.J
+                    JS
                 </a>
             </h1>
 
