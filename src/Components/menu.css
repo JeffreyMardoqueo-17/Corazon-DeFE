@@ -5,9 +5,11 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     color: white;
-     text-transform: capitalize;
+    text-transform: capitalize;
+    height: 100vh;
+    background-image: ();
 }
 
 .Cabecera-h1 {}
@@ -16,7 +18,7 @@
     text-decoration: none;
     color: white;
     display: flex;
-    align-items: center;
+    align-items: top;
 }
 
 .Cabecera-button {
