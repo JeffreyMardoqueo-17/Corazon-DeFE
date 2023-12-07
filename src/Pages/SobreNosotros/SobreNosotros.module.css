@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Seccion del cajon global*/
+.SobreNosotros{
+    background-color: rgb(69, 70, 70);
+    height: 100vh;
+    width: 100%;
+    /* display: flex; */
+    display: grid;
+}
+.Izquierda{
+    background-color: rgb(115, 150, 219);
+    height: 50%;
+    width:50%;
+    /* flex: 1; */
+}
+.derecha{
+    /* flex: 1; */
+    background-color: red;
+    height: 50%;
+    width:49%;
+}

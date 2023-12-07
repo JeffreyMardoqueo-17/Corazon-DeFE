@@ -6,7 +6,7 @@ function SobreNosotros() {
         <div className={st.SobreNosotros}>
             {/* parte de la izquierda */}
             <div className={st.Izquierda}>
-                <img src="/IMG/viandoalcielo.jpeg" alt="Viendo al cielo" srcset="" />
+                <img src="/IMG/viandoalcielo.jpeg" alt="Viendo al cielo" srcset="" className={st.img} />
             </div>
             {/* Parte de la derecha */}
             <div className={st.derecha}>
