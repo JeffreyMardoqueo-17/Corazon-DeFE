@@ -21,10 +21,18 @@
                 <li><a href="">MMSLKDDS</a></li>
             </ul>
         </div>
+        <!---LOGO DEAMBURGUSA-->
+        <img src="" alt="aqui va la amburguesa" class="menu-hamburger">
     </div>
     <header>
 
     </header>
 </body>
-
+<script>
+    const menuHamburger = document.querySelector("menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+    menuHamburger.addEventListener('click', ()=>{
+        navLinks.classList.toggle('.mobile-menu')
+    })
+</script>
 </html>
