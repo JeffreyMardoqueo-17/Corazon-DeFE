@@ -33,10 +33,18 @@ const Cabecera = () => {
 
     const toggleMenu = () => {
         setMenu(!menu);
+
+        // Agrega o quita la clase al body para habilitar/deshabilitar el scroll
+        if (!menu) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
     };
 
     const handleLinkClick = () => {
         setMenu(false);
+        document.body.classList.remove('no-scroll');
     };
 
     return (

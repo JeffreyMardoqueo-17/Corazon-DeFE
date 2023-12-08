@@ -27,6 +27,11 @@
     align-items: top;
 }
 
+/* Agrega este estilo para deshabilitar el scroll cuando el menú está abierto */
+.no-scroll {
+    overflow: hidden;
+}
+
 .Cabecera-button {
     display: none;
     cursor: pointer;

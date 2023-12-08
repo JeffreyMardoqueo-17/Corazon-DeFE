@@ -5,12 +5,15 @@ import { Carrusel } from './Components/Carrusel.jsx';
 
 //seccion sobre nosotros
 import SobreNosotros from './Pages/SobreNosotros/SobreNosotros.jsx';
+import AboutJeff from './Components/AboutJeff.jsx';
+
 function App() {
   return (
     <div className="App">
       <Menu />
       {/* <Carrusel></Carrusel> */}
       {/* <SobreNosotros /> */}
+      <AboutJeff />
     </div>
   );
 }
