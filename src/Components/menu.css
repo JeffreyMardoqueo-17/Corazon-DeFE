@@ -41,7 +41,13 @@
     width: 2em;
     height: 2em;
     fill: white;
+    /* Agrega otros estilos según tus preferencias */
+    transition: fill 0.3s ease; /* Agrega una transición suave para el cambio de color */
 }
+.Cabecera-button:hover .Cabecera-svg {
+    fill:#fff;
+}
+
 
 .Cabecera-nav {
     display: flex;
