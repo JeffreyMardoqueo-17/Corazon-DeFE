@@ -66,11 +66,11 @@ const Cabecera = () => {
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                 </svg>
             </button>
-
             <nav className={`Cabecera-nav ${menu ? 'isActive' : ''}`}>
-                <ul className='Cabecera-ul'>
+                <ul className="Cabecera-ul">
                     {list.map((item, index) => (
-                        <li key={index} className='Cabecera-li'>
+                        <li key={index} className="Cabecera-li">
+                            {/* Utiliza el componente Link en lugar de a */}
                             <Link to={item.link} className="Cabecera-a" onClick={handleLinkClick}>
                                 <span className="title">{item.text}</span>
                             </Link>
