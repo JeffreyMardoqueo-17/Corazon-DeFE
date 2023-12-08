@@ -10,10 +10,10 @@ import AboutJeff from './Components/AboutJeff.jsx';
 function App() {
   return (
     <div className="App">
-      {/* <Menu /> */}
+      <Menu />
       <Carrusel></Carrusel>
       {/* <SobreNosotros /> */}
-      {/* <AboutJeff /> */}
+      <AboutJeff />
     </div>
   );
 }

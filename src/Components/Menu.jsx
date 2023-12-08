@@ -1,31 +1,34 @@
 import { useState } from 'react';
 import './menu.css';
+//aqui para las rutas
+import { Link } from 'react-router-dom';
+
 
 const Cabecera = () => {
     const list = [
         {
             text: 'Sobre nosotros',
-            link: '#',
+            link: '/sobrenosotros',
         },
         {
             text: 'Sobre Jeffrey',
-            link: '#',
+            link: '/aboutjeff',
         },
         {
             text: 'Sobre Set',
-            link: '#',
+            link: '/sobreset',
         },
         {
             text: 'Cantos',
-            link: '#',
+            link: '/cantos',
         },
         {
             text: 'Contacto',
-            link: '#',
+            link: '/contacto',
         },
         {
             text: 'random',
-            link: '#',
+            link: '/random',
         }
     ];
 
@@ -68,9 +71,9 @@ const Cabecera = () => {
                 <ul className='Cabecera-ul'>
                     {list.map((item, index) => (
                         <li key={index} className='Cabecera-li'>
-                            <a href={item.link} className='Cabecera-a' onClick={handleLinkClick}>
+                            <Link to={item.link} className="Cabecera-a" onClick={handleLinkClick}>
                                 <span className="title">{item.text}</span>
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>
