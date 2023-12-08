@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+.about{
+    width: 100%;
+    height: auto;
+    background-color:transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.about .content img{
+    height: auto;
+    width: 600px;
+    max-width: 100%;
+    border-radius: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.text{
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+.content{
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.content h1{
+    color: rgb(45, 45, 36);
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.text h5{
+    color:rgb(63, 49, 23) ;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.text p{
+    color: #000000;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+
+.Boton{
+    background-color: yellow;
+    color:black ;
+    border: 2px solid transparent;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.Boton:hover{
+    transform: scale(1,2);
+    background: transparent;
+    border: 2px solid yellow;
+    color:black;
+    transition: .4s;
+    cursor: pointer;
+}
+
+/*ediaas*/
+@media screen and (max-width: 1000px){
+    .about{
+        width: 100%;
+        height: auto;
+        padding: 70px 0;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .about .content img{
+        margin-bottom: 35px;
+    }
+    .text h1{
+        font-size: 60px;
+        margin-bottom: 25px;
+    }
+}
