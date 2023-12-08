@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import './menu.css'
+import './menu.css';
 
 const Cabecera = () => {
-
     const list = [
         {
             text: 'Sobre nosotros',
@@ -28,16 +27,20 @@ const Cabecera = () => {
             text: 'random',
             link: '#',
         }
-    ]
+    ];
 
-    const [menu, setMenu] = useState(false)
+    const [menu, setMenu] = useState(false);
 
     const toggleMenu = () => {
-        setMenu(!menu)
-    }
+        setMenu(!menu);
+    };
+
+    const handleLinkClick = () => {
+        setMenu(false);
+    };
 
     return (
-            <header className="Cabecera">
+        <header className="Cabecera">
             <h1 className="Cabecera-h1">
                 <a href="#" className="Cabecera-a">
                     JS
@@ -53,11 +56,11 @@ const Cabecera = () => {
                 </svg>
             </button>
 
-            <nav className={`Cabecera-nav ${menu ? 'isActive' : ''}`}> 
+            <nav className={`Cabecera-nav ${menu ? 'isActive' : ''}`}>
                 <ul className='Cabecera-ul'>
                     {list.map((item, index) => (
                         <li key={index} className='Cabecera-li'>
-                            <a href={item.link} className='Cabecera-a'>
+                            <a href={item.link} className='Cabecera-a' onClick={handleLinkClick}>
                                 <span className="title">{item.text}</span>
                             </a>
                         </li>
@@ -65,6 +68,7 @@ const Cabecera = () => {
                 </ul>
             </nav>
         </header>
-    )
-}
+    );
+};
+
 export default Cabecera;

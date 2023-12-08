@@ -10,10 +10,10 @@ function App() {
     <div className="App">
       <Menu />
       {/* <Carrusel></Carrusel> */}
-      <SobreNosotros />
+      {/* <SobreNosotros /> */}
     </div>
   );
 }
 
 export default App;
-//este sera como nuestro inde
+//este sera como nuestro indsdjsd
