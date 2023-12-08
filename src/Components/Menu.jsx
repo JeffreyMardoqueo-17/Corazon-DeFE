@@ -6,31 +6,32 @@ import { Link } from 'react-router-dom';
 
 const Cabecera = () => {
     const list = [
-        {
-            text: 'Sobre nosotros',
-            link: '/sobrenosotros',
-        },
-        {
-            text: 'Sobre Jeffrey',
-            link: '/aboutjeff',
-        },
-        {
-            text: 'Sobre Set',
-            link: '/sobreset',
-        },
-        {
-            text: 'Cantos',
-            link: '/cantos',
-        },
-        {
-            text: 'Contacto',
-            link: '/contacto',
-        },
-        {
-            text: 'random',
-            link: '/random',
-        }
-    ];
+    {
+      text: 'Sobre nosotros',
+      link: '/sobrenosotros',
+    },
+    {
+      text: 'Sobre Jeffrey',
+      link: '/aboutjeff',
+    },
+    {
+      text: 'Sobre Set',
+      link: '/sobreset',
+    },
+    {
+      text: 'Cantos',
+      link: '/cantos',
+    },
+    {
+      text: 'Contacto',
+      link: '/contacto',
+    },
+    {
+      text: 'random',
+      link: '/random',
+    },
+  ];
+
 
     const [menu, setMenu] = useState(false);
 

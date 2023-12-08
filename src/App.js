@@ -1,10 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
-import Menu from './Components/Menu.jsx'
-import { Carrusel } from './Components/Carrusel.jsx';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';  // Agrega estas importaciones
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-//sección sobre nosotros
+import Menu from './Components/Menu.jsx';
+import { Carrusel } from './Components/Carrusel.jsx';
 import SobreNosotros from './Pages/SobreNosotros/SobreNosotros.jsx';
 import AboutJeff from './Components/AboutJeff.jsx';
 
@@ -12,10 +10,14 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Menu />
-        <Carrusel></Carrusel>
-        {/* <SobreNosotros /> */}
-        <AboutJeff />
+        <Switch>
+          {/* <Menu />
+          <Carrusel /> */}
+          <Route path="/sobrenosotros" component={SobreNosotros} />
+          <Route path="/aboutjeff" component={AboutJeff} />
+
+          {/* Agrega más rutas según sea necesario */}
+        </Switch>
       </div>
     </Router>
   );
