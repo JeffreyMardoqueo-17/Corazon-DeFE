@@ -1,102 +1,100 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch, BrowserRouter, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import React, { useState } from 'react';
+import Menu from './Components/Menu.jsx'
+import Aboutjeff from './Components/AboutJeff.jsx'
+import Carrusel from './Components/Carrusel'
 
-import Menu from './Components/Menu.jsx';
-import { Carrusel } from './Components/Carrusel.jsx';
-import AboutJeff from './Components/AboutJeff.jsx';
-import Footer from './Components/Footer.jsx';
-import SectionCantos from './Pages/SectionCantos.jsx';
+
+const Nosotros = () => <div>Nosotros</div>;
+const AboutJeff = () => <div><AboutJeff></AboutJeff></div>;
+const SobreSet = () => <div>Sobre Set</div>;
+const Cantos = () => <div>Cantos</div>;
+const Contacto = () => <div>Contacto</div>;
+const Random = () => <div>Random</div>;
 
 function App() {
-
-  //new code
-  // Actualiza las rutas para que coincidan con los IDs de las secciones
   const list = [
     {
       text: 'Sobre nosotros',
-      link: '#sobreElGrupo',
+      link: '/sobreElGrupo',
+      element: <Nosotros />,
     },
     {
       text: 'Sobre Jeffrey',
-      link: '#aboutJeff',
+      link: '/aboutJeff',
+      element: <AboutJeff />,
     },
     {
       text: 'Sobre Set',
-      link: '#sobreset',
+      link: '/sobreset',
+      element: <SobreSet />,
     },
     {
       text: 'Cantos',
-      link: '#cantos',
+      link: '/cantos',
+      element: <Cantos />,
     },
     {
       text: 'Contacto',
-      link: '#footer',
+      link: '/footer',
+      element: <Contacto />,
     },
     {
       text: 'Random',
-      link: '#random',
+      link: '/random',
+      element: <Random />,
     },
   ];
 
   const [menu, setMenu] = useState(false);
 
-  // Función para manejar el clic en los enlaces y realizar un desplazamiento suave
-  const handleLinkClick = (event, targetId) => {
-    event.preventDefault();
-
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth' });
-    }
-
-    // Cierra el menú y restaura el desplazamiento del cuerpo
+  const handleLinkClick = () => {
     setMenu(false);
     document.body.classList.remove('no-scroll');
   };
 
-  //content 
   return (
-    <div>
-      <header className="Cabecera">
-        <h1 className="Cabecera-h1">
-          {/* Utiliza Link para el logo */}
-          <Link to="/" className="Cabecera-a">
-            JS
-          </Link>
-        </h1>
-
-        <button
-          onClick={() => {
-            setMenu(!menu);
-            // Agrega o quita la clase al body para habilitar/deshabilitar el scroll
-            document.body.classList.toggle('no-scroll');
-          }}
-          className="Cabecera-button"
-        >
-          <svg className='Cabecera-svg' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-            <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-          </svg>
-        </button>
-
-        <nav className={`Cabecera-nav ${menu ? 'isActive' : ''}`}>
-          <ul className="Cabecera-ul">
-            {/* Utiliza el método map para renderizar la lista de enlaces */}
+    <Router>
+      <div>
+        <header className="Cabecera">
+          <h1 className="Cabecera-h1">
+            <Link to="/" className="Cabecera-a">
+              JS
+            </Link>
+          </h1>
+          <button
+            onClick={() => {
+              setMenu(!menu);
+              document.body.classList.toggle('no-scroll');
+            }}
+            className="Cabecera-button"
+          >
+            <svg className="Cabecera-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+          </button>
+          <nav className={`Cabecera-nav ${menu ? 'isActive' : ''}`}>
+            <ul className="Cabecera-ul">
+              {list.map((item, index) => (
+                <li key={index} className="Cabecera-li">
+                  <Link to={item.link} className="Cabecera-a" onClick={handleLinkClick}>
+                    <span className="title">{item.text}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <Routes>
+            <Route path="/" element={<div></div>} />
             {list.map((item, index) => (
-              <li key={index} className="Cabecera-li">
-                {/* Utiliza el componente Link en lugar de a */}
-                <a
-                  href={item.link}
-                  className="Cabecera-a"
-                  onClick={(e) => handleLinkClick(e, item.link.substring(1))}
-                >
-                  <span className="title">{item.text}</span>
-                </a>
-              </li>
+              <Route key={index} path={item.link} element={item.element} />
             ))}
-          </ul>
-        </nav>
-      </header>
-    </div>
+          </Routes>
+        </main>
+      </div>
+    </Router>
   );
 }
 
