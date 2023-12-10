@@ -10,7 +10,7 @@
     height: 100vh;
     background-image: url(/public/IMG/KSJDSD.webp);
     background-size: cover;
-    background-position: center; /* Centra la imagen en la pantalla */
+    background-position: center;
     transition: all ease-in-out 0.7s;
 }
 
@@ -27,7 +27,6 @@
     align-items: top;
 }
 
-/* Agrega este estilo para deshabilitar el scroll cuando el menú está abierto */
 .no-scroll {
     overflow: hidden;
 }
@@ -41,19 +40,17 @@
     width: 2em;
     height: 2em;
     fill: white;
-    /* Agrega otros estilos según tus preferencias */
-    transition: fill 0.3s ease; /* Agrega una transición suave para el cambio de color */
-}
-.Cabecera-button:hover .Cabecera-svg {
-    fill:#fff;
+    transition: fill 0.3s ease;
 }
 
+.Cabecera-button:hover .Cabecera-svg {
+    fill: #fff;
+}
 
 .Cabecera-nav {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
-    /* align-items: center; */
 }
 
 .Cabecera-ul {
@@ -68,17 +65,17 @@
     margin: 0 0.5em;
 }
 
-@media screen and (max-width < 800px) {
+@media screen and (max-width: 800px) {
     .Cabecera-nav.isActive {
         height: 100vh;
         opacity: 1;
         overflow: hidden;
     }
+
     .Cabecera {
         width: 100%;
         height: 1000vh;
         backdrop-filter: blur(8px);
-        /* Añade el filtro de desenfoque solo en versión responsive */
         margin-left: -100%;
         transition: all ease-in-out 0.7s;
     }
@@ -86,7 +83,6 @@
     .Cabecera {
         width: 100%;
         background-color: rgb(29, 65, 13);
-        /* padding: 1em; */
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
@@ -131,9 +127,6 @@
     }
 }
 
-
-
-/**EFECTOS HOVER DE LOS LINKS DEL MENU=============*/
 a {
     border: none;
     background: none;
@@ -144,8 +137,8 @@ a::before {
     margin-left: auto;
 }
 
-a ::after,
-a ::before {
+a::after,
+a::before {
     content: '';
     width: 0%;
     height: 0.5px;
@@ -155,8 +148,6 @@ a ::before {
 }
 
 a:hover::after,
-a :hover::before {
+a:hover::before {
     width: 100%;
 }
-
-/*CAMBIOS AL MENU*/
