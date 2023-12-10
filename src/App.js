@@ -5,8 +5,9 @@ import Menu from './Components/Menu.jsx';
 import { Carrusel } from './Components/Carrusel.jsx';
 import SobreNosotros from './Pages/SobreNosotros/SobreNosotros.jsx';
 import AboutJeff from './Components/AboutJeff.jsx';
-import Cantos from './Components/Cantos.jsx';
+import Cantos from './Components/Tarjetas.jsx';
 import Footer from './Components/Footer.jsx';
+import SectionCantos from './Pages/SectionCantos.jsx';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           <Route path='carrusel' element={<Carrusel></Carrusel>} />
           <Route path='sobreElGrupo' element={<SobreNosotros></SobreNosotros>} />
           <Route path='aboutJeff' element={<AboutJeff></AboutJeff>} />
-          <Route path='cantos' element={<Cantos></Cantos>} />
+          <Route path='cantos' element={<SectionCantos></SectionCantos>} />
           <Route path='footer' element={<Footer></Footer>} />
         </Routes>
       </div>
