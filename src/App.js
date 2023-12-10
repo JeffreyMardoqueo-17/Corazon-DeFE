@@ -3,9 +3,7 @@ import { BrowserRouter as Router, Route, Switch, BrowserRouter, Routes } from 'r
 
 import Menu from './Components/Menu.jsx';
 import { Carrusel } from './Components/Carrusel.jsx';
-import SobreNosotros from './Pages/SobreNosotros/SobreNosotros.jsx';
 import AboutJeff from './Components/AboutJeff.jsx';
-import Cantos from './Components/Tarjetas.jsx';
 import Footer from './Components/Footer.jsx';
 import SectionCantos from './Pages/SectionCantos.jsx';
 
