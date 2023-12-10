@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, BrowserRouter } from 'react-router-dom';
 
 import Menu from './Components/Menu.jsx';
 import { Carrusel } from './Components/Carrusel.jsx';
@@ -8,18 +8,13 @@ import AboutJeff from './Components/AboutJeff.jsx';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Switch>
-          {/* <Menu />
-          <Carrusel /> */}
-          <Route path="/sobrenosotros" component={SobreNosotros} />
-          <Route path="/aboutjeff" component={AboutJeff} />
-
-          {/* Agrega más rutas según sea necesario */}
-        </Switch>
-      </div>
-    </Router>
+    <BrowserRouter>
+    <div className='container mt-5'>
+      <Routes>
+        <Route path='menu' element ={Menu}/>
+      </Routes>
+    </div>
+    </BrowserRouter> 
   );
 }
 

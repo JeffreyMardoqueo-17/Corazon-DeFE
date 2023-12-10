@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './menu.css';
 //aqui para las rutas
 import { Link } from 'react-router-dom';
-
+import App from '../App';
 
 const Cabecera = () => {
     const list = [
