@@ -8,7 +8,7 @@ const Cabecera = () => {
     const list = [
     {
       text: 'Sobre nosotros',
-      link: '/sobrenosotros',
+      link: 'SobreNosotros',
     },
     {
       text: 'Sobre Jeffrey',

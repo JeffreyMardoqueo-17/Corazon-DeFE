@@ -9,9 +9,10 @@ import AboutJeff from './Components/AboutJeff.jsx';
 function App() {
   return (
     <BrowserRouter>
-    <div className='container mt-5'>
+    <div className='container'>
       <Routes>
         <Route path='menu' element ={Menu}/>
+        <Route path='aboutJeff' element={AboutJeff}/>
       </Routes>
     </div>
     </BrowserRouter> 
