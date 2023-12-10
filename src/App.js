@@ -18,6 +18,7 @@ function App() {
           <Route path='aboutJeff' element={<AboutJeff></AboutJeff>} />
           <Route path='cantos' element={<SectionCantos></SectionCantos>} />
           <Route path='footer' element={<Footer></Footer>} />
+          {/* //COMPONENTES DE LA PAGINA PRINCIPAL// */}
         </Routes>
       </div>
     </BrowserRouter>
