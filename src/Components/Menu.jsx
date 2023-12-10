@@ -6,31 +6,31 @@ import App from '../App';
 
 const Cabecera = () => {
     const list = [
-    {
-      text: 'Sobre nosotros',
-      link: 'SobreNosotros',
-    },
-    {
-      text: 'Sobre Jeffrey',
-      link: '/aboutjeff',
-    },
-    {
-      text: 'Sobre Set',
-      link: '/sobreset',
-    },
-    {
-      text: 'Cantos',
-      link: '/cantos',
-    },
-    {
-      text: 'Contacto',
-      link: '/contacto',
-    },
-    {
-      text: 'random',
-      link: '/random',
-    },
-  ];
+        {
+            text: 'Sobre nosotros',
+            link: 'sobreElGrupo',
+        },
+        {
+            text: 'Sobre Jeffrey',
+            link: '/aboutJeff',
+        },
+        {
+            text: 'Sobre Set',
+            link: '/sobreset',
+        },
+        {
+            text: 'Cantos',
+            link: '/cantos',
+        },
+        {
+            text: 'Contacto',
+            link: '/footer',
+        },
+        {
+            text: 'random',
+            link: '/random',
+        },
+    ];
 
 
     const [menu, setMenu] = useState(false);
