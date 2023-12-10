@@ -1,5 +1,5 @@
 import React from 'react';
-import {Tarjetas} from '../Components/Tarjetas'
+import {} from '../Components/Tarjetas'
 
 const SectionCantos = () => {
     return (
