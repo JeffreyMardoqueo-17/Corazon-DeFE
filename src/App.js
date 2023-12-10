@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path='menu' element={<Menu></Menu>} />
           <Route path='carrusel' element={<Carrusel></Carrusel>} />
-          <Route path='sobreElGrupo' element={<SobreNosotros></SobreNosotros>} />
+          {/* <Route path='sobreElGrupo' element={<SobreNosotros></SobreNosotros>} /> */}
           <Route path='aboutJeff' element={<AboutJeff></AboutJeff>} />
           <Route path='cantos' element={<SectionCantos></SectionCantos>} />
           <Route path='footer' element={<Footer></Footer>} />
